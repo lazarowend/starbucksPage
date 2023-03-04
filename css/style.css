@@ -348,6 +348,10 @@ section.section-initial .btn {
     max-width: 90% !important;
 }
 
+/*
+    AQUI COMEÇO O ESTIDO DAS 3 SESSÕES SECUNDARIAS
+*/
+
 section.section-secondary {
     margin-top: 30px;
     height: 380px;
@@ -397,6 +401,10 @@ section.section-secondary .btn {
     margin: 0 auto;
 }
 
+/*
+    AQUI COMEÇO O ESTIDO DO RODAPÉ
+*/
+
 footer {
     margin-top: 25px;
     box-shadow: -1px -4px 14px -6px #000;
@@ -424,6 +432,7 @@ footer .sobre h2 {
 }
 
 footer .seta-footer {
+    display: none;
     position: absolute;
     width: 20px;
     height: 20px;
@@ -435,7 +444,7 @@ footer .seta-footer {
 }
 
 footer .sobre a {
-    display: none;
+    display: block;
     text-decoration: none;
     color: #707070;
     font-size: 15px;
@@ -553,6 +562,9 @@ footer .sobre-title {
 }
 
 @media screen and (max-width: 768px) {
+    footer .seta-footer {
+        display: block;
+    }
     section.section-slider {
         align-items: center;
         width: 100%;
