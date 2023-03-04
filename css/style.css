@@ -210,7 +210,7 @@ section.section-slider .active {
 section.section-slider .btn-left {
     width: 32px;
     height: 32px;
-    background-image: url('./img/proximo.png');
+    background-image: url('/img/proximo.png');
     position: absolute;
     top: calc(50% - 16px);
     left: 20px;
@@ -221,7 +221,7 @@ section.section-slider .btn-left {
 section.section-slider .btn-right {
     width: 32px;
     height: 32px;
-    background-image: url('./img/proximo.png');
+    background-image: url('/img/proximo.png');
     position: absolute;
     top: calc(50% - 16px);
     right: 20px;
