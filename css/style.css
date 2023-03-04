@@ -414,7 +414,7 @@ footer {
 }
 
 footer .sobre {
-    width: 100%;
+    width: 150px;
     margin-right: 40px;
     float: left;
     position: relative;
@@ -428,7 +428,7 @@ footer .sobre-img img {
 footer .sobre h2 {
     font-weight: 600;
     font-size: 18px;
-    width: 100%;
+    width: 150px;
 }
 
 footer .seta-footer {
