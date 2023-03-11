@@ -1,18 +1,17 @@
 var x = true;
 var slideAtual = 0;
 var ballAtual = 0
-const sobre1 = $('#sobre-1 img');
-const sobre2 = $('#sobre-2 img')
-const sobre3 = $('#sobre-3 img')
-const sobre4 = $('#sobre-4 img')
+const arrow_1 = $('#sobre-1 img');
+const arrow_2 = $('#sobre-2 img')
+const arrow_3 = $('#sobre-3 img')
+const arrow_4 = $('#sobre-4 img')
 const balls = $('.ball');
 const slides = $('.slide');
 const next = $('.btn-left');
 const prev = $('.btn-right');
-const ballLeft = $('.one-ball');
-const ballCenter = $('.two-ball');
-const ballRight = $('.three-ball');
-
+const ball_0 = $('.one-ball');
+const ball_1 = $('.two-ball');
+const ball_2 = $('.three-ball');
 
 // função para fechar o menu mobile pela parte transparente do background
 $('nav .dark').click(function() {
@@ -82,34 +81,34 @@ next.click(nextSlide);
 prev.click(prevSlide)
 
 // funções para mover o slide pelas bolinhas
-ballLeft.click(function() {
+ball_0.click(function() {
     slideAtual = 0
     showSlide(slideAtual)
 });
 
-ballCenter.click(function() {
+ball_1.click(function() {
     slideAtual = 1
     showSlide(slideAtual)
 });
 
-ballRight.click(function() {
+ball_2.click(function() {
     slideAtual = 2
     showSlide(slideAtual)
 });
 
-function teste() {
+function arrow() {
     if (this.className == 'img-seta-1 seta-footer') {
         if (x) {
             $('footer #sobre-1 a').css({
                 'display':'block',
             })
-            sobre1.css('transform','rotate(180deg)')
+            arrow_1.css('transform','rotate(180deg)')
             x = false
         }else {
             $('footer #sobre-1 a').css({
                 'display':'none'
             })
-            sobre1.css('transform','rotate(0deg)')
+            arrow_1.css('transform','rotate(0deg)')
             x = true
         }
     } else if (this.className == 'img-seta-2 seta-footer') {
@@ -117,13 +116,13 @@ function teste() {
             $('footer #sobre-2 a').css({
                 'display':'block',
             })
-            sobre2.css('transform','rotate(180deg)')
+            arrow_2.css('transform','rotate(180deg)')
             x = false
         }else {
             $('footer #sobre-2 a').css({
                 'display':'none'
             })
-            sobre2.css('transform','rotate(0deg)')
+            arrow_2.css('transform','rotate(0deg)')
             x = true
         }
     } else if (this.className == 'img-seta-3 seta-footer') {
@@ -131,13 +130,13 @@ function teste() {
             $('footer #sobre-3 a').css({
                 'display':'block',
             })
-            sobre3.css('transform','rotate(180deg)')
+            arrow_3.css('transform','rotate(180deg)')
             x = false
         }else {
             $('footer #sobre-3 a').css({
                 'display':'none'
             })
-            sobre3.css('transform','rotate(0deg)')
+            arrow_3.css('transform','rotate(0deg)')
             x = true
         }
     } else {
@@ -145,24 +144,19 @@ function teste() {
             $('footer #sobre-4 a').css({
                 'display':'block',
             })
-            sobre4.css('transform','rotate(180deg)')
+            arrow_4.css('transform','rotate(180deg)')
             x = false
         }else {
             $('footer #sobre-4 a').css({
                 'display':'none'
             })
-            sobre4.css('transform','rotate(0deg)')
+            arrow_4.css('transform','rotate(0deg)')
             x = true
         }
     }
 }
 
-sobre1.click(teste)
-sobre2.click(teste)
-sobre3.click(teste)
-sobre4.click(teste)
-
-/*
-
-});
-*/
+arrow_1.click(arrow)
+arrow_2.click(arrow)
+arrow_3.click(arrow)
+arrow_4.click(arrow)
